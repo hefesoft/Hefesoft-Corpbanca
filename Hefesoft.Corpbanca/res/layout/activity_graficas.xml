@@ -1,0 +1,85 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Graficas_Contenedor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	tools:context=".Graficas"    
+    >
+
+
+    
+  <!-- Login progress -->
+
+    <LinearLayout
+        android:id="@+id/layout_Cargando_graficas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/chart_Cargando"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Cargando grafica"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+                <!-- splash sin datos -->
+
+    <LinearLayout
+        android:id="@+id/layout_Chart_Splash_graficas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Texto aca"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+    
+    
+    
+            <!-- splash sin datos -->
+
+    <LinearLayout
+        android:id="@+id/layout_chart_graficas_Otro_Anio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Sin datos para este mes y año selecciona otro por favor"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+    
+     <android.support.v4.view.ViewPager
+        android:id="@+id/pager_Graficas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Home" />
+     
+    
+    </merge>

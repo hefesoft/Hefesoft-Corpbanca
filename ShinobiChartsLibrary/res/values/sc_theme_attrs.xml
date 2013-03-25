@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="sc_Style_Index">
+        <attr name="sc_styleIndex" format="integer" />
+    </declare-styleable>
+
+    <item name="sc_styleIndex" type="integer">1</item>
+
+    <attr name="sc_labelStyle" format="reference" />
+    <attr name="sc_lineStyle" format="reference" />
+    
+    <attr name="sc_chartStyle" format="reference" />
+    <attr name="sc_plotAreaStyle" format="reference" />
+    
+    <attr name="sc_legendStyle" format="reference" />  
+    
+    <attr name="sc_crosshairStyle" format="reference" />  
+    
+    <attr name="sc_numberAxisStyle" format="reference" />  
+    <attr name="sc_axisStyle" format="reference" />    
+    <attr name="sc_majorTickStyle" format="reference" />
+    <attr name="sc_minorTickStyle" format="reference" />
+    <attr name="sc_majorGridLineStyle" format="reference" />
+    
+    <attr name="sc_seriesPieStyle" format="reference" />
+    <attr name="sc_seriesLineStyles" format="reference" />
+    <attr name="sc_seriesLineStyle1" format="reference" />
+    <attr name="sc_seriesLineStyle2" format="reference" />
+    <attr name="sc_seriesLineStyle3" format="reference" />
+    <attr name="sc_seriesLineStyle4" format="reference" />
+    <attr name="sc_seriesLineStyle5" format="reference" />
+    <attr name="sc_seriesLineStyle6" format="reference" />
+    <attr name="sc_seriesColumnStyle" format="reference" />
+    <attr name="sc_seriesBubbleStyle" format="reference" />
+
+</resources>

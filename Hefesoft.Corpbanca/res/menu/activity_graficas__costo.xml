@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_settings"/>
+    <item android:id="@+id/menu_graficas_Cambiar_Centro_Costo" android:title="@string/cambiar_centro_costo" android:showAsAction="ifRoom|withText"></item><item android:id="@+id/graficas_seleccionar_mes" android:title="@string/sindicato_ingresos_menu_cambiar_mes" android:showAsAction="ifRoom|withText"></item>
+    
+
+</menu>

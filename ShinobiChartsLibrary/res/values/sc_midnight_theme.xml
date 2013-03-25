@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Main Colours -->
+    <color name="sc_midnight_blueColorDark">#00688C</color>
+    <color name="sc_midnight_blueColorLight">#0787BA</color>
+    <color name="sc_midnight_brownColorDark">#8B4E24</color>
+    <color name="sc_midnight_brownColorLight">#B9652F</color>
+    <color name="sc_midnight_greenColorDark">#00863B</color>
+    <color name="sc_midnight_greenColorLight">#08B24D</color>
+    <color name="sc_midnight_greyColor">#A6A6A6</color>
+    <color name="sc_midnight_greyColorLabel">#CCCCCC</color>
+    <color name="sc_midnight_greyColorLowAlpha">#22A6A6A6</color>
+    <color name="sc_midnight_orangeColorDark">#B86400</color>
+    <color name="sc_midnight_orangeColorLight">#F38208</color>
+    <color name="sc_midnight_pinkColor">#F781BF</color>
+    <color name="sc_midnight_pinkColorLowAlpha">#F781BF</color>
+    <color name="sc_midnight_purpleColorDark">#804789</color>
+    <color name="sc_midnight_purpleColorLight">#AA5CB6</color>
+    <color name="sc_midnight_textShadowColor">#090909</color>
+    <color name="sc_midnight_yellowColorDark">#A3A323</color>
+    <color name="sc_midnight_yellowColorLight">#D6D62E</color>
+
+    <!-- Background Colours -->
+    <color name="sc_midnight_backgroundColor">#303030</color>
+    <color name="sc_midnight_backgroundColorGradient">#1E1E1E</color>
+
+    <!-- Pie Colours -->
+    <array name="sc_midnight_flavourColours" format="color">
+        <item>@color/sc_midnight_blueColorLight</item>
+        <item>@color/sc_midnight_greenColorLight</item>
+        <item>@color/sc_midnight_purpleColorLight</item>
+        <item>@color/sc_midnight_orangeColorLight</item>
+        <item>@color/sc_midnight_yellowColorLight</item>
+        <item>@color/sc_midnight_brownColorLight</item>
+    </array>
+    <array name="sc_midnight_crustColours" format="color">
+        <item>@color/sc_midnight_blueColorDark</item>
+        <item>@color/sc_midnight_greenColorDark</item>
+        <item>@color/sc_midnight_purpleColorDark</item>
+        <item>@color/sc_midnight_orangeColorDark</item>
+        <item>@color/sc_midnight_yellowColorDark</item>
+        <item>@color/sc_midnight_brownColorDark</item>
+    </array>
+
+    <style name="sc_Midnight.Label" parent="sc_Default.Label">
+        <item name="sc_labelFontColour">@color/sc_midnight_greyColorLabel</item>
+    </style>
+
+    <style name="sc_Midnight.Chart" parent="sc_Default.Chart">
+        <item name="sc_backgroundColour">@color/sc_midnight_backgroundColor</item>
+        <item name="sc_backgroundColourGradient">@color/sc_midnight_backgroundColorGradient</item>
+    </style>
+    
+    <style name="sc_Midnight.PlotArea" parent="sc_Default.PlotArea">
+    </style>
+
+    <style name="sc_Midnight.Crosshair" parent="sc_Default.Crosshair">
+        <item name="sc_lineColour">@color/sc_midnight_greyColor</item>
+    </style>
+    
+    <style name="sc_Midnight.Legend" parent="sc_Default.Legend">
+        <item name="sc_borderColour">@color/sc_midnight_greyColor</item>
+        <item name="sc_labelFontColour">@color/sc_midnight_greyColorLabel</item>
+    </style>
+    
+    <style  name="sc_Midnight.Axis" parent="sc_Default.Axis">
+        <item name="sc_lineColour">@color/sc_midnight_greyColor</item>
+    </style>
+    
+    <style  name="sc_Midnight.Axis.Number" parent="sc_Midnight.Axis">
+        <item name="sc_numberFormat"></item>
+    </style>
+    
+    <style name="sc_Midnight.Tick.Major" parent="sc_Default.Tick.Major">
+        <item name="sc_lineColour">@color/sc_midnight_greyColor</item>
+        <item name="sc_labelFontColour">@color/sc_midnight_greyColorLabel</item>
+    </style>
+
+    <style name="sc_Midnight.Tick.Minor" parent="sc_Default.Tick.Minor">
+        <item name="sc_lineColour">@color/sc_midnight_greyColor</item>
+        <item name="sc_labelFontColour">@color/sc_midnight_greyColorLabel</item>
+    </style>
+    
+    <style  name="sc_Midnight.GridLine.Major" parent="sc_Default.GridLine.Major">
+        <item name="sc_lineColour">@color/sc_midnight_greyColorLowAlpha</item>
+    </style>
+    
+    <style name="sc_Midnight.Series.Pie" parent="sc_Default.Series.Pie">
+        <item name="sc_crustColours">@array/sc_midnight_crustColours</item>
+        <item name="sc_flavourColours">@array/sc_midnight_flavourColours</item>
+        <item name="sc_flavourTexture">sc_bevelBright</item>
+        <item name="sc_rotationAnimation">sc_bounce</item>
+        <item name="sc_labelFontColour">@color/sc_whiteColor</item>
+    </style>
+
+    <style name="sc_Midnight.Series.Line.1" parent="sc_Default.Series.Line.1">
+        <item name="sc_lineColour">@color/sc_midnight_blueColorLight</item>
+        <item name="sc_fillColour" format="color">@color/sc_midnight_blueColorDark</item>
+        <item name="sc_pointColour" format="color">@color/sc_midnight_blueColorLight</item>
+    </style>
+
+    <style name="sc_Midnight.Series.Line.2" parent="sc_Default.Series.Line.2">
+        <item name="sc_lineColour">@color/sc_midnight_greenColorLight</item>
+        <item name="sc_fillColour" format="color">@color/sc_midnight_greenColorDark</item>
+        <item name="sc_pointColour" format="color">@color/sc_midnight_greenColorLight</item>
+    </style>
+
+    <style name="sc_Midnight.Series.Line.3" parent="sc_Default.Series.Line.3">
+        <item name="sc_lineColour">@color/sc_midnight_purpleColorLight</item>
+        <item name="sc_fillColour" format="color">@color/sc_midnight_purpleColorDark</item>
+        <item name="sc_pointColour" format="color">@color/sc_midnight_purpleColorLight</item>
+    </style>
+
+    <style name="sc_Midnight.Series.Line.4" parent="sc_Default.Series.Line.4">
+        <item name="sc_lineColour">@color/sc_midnight_orangeColorLight</item>
+        <item name="sc_fillColour" format="color">@color/sc_midnight_orangeColorDark</item>
+        <item name="sc_pointColour" format="color">@color/sc_midnight_orangeColorLight</item>
+    </style>
+
+    <style name="sc_Midnight.Series.Line.5" parent="sc_Default.Series.Line.5">
+        <item name="sc_lineColour">@color/sc_midnight_yellowColorLight</item>
+        <item name="sc_fillColour" format="color">@color/sc_midnight_yellowColorDark</item>
+        <item name="sc_pointColour" format="color">@color/sc_midnight_yellowColorLight</item>
+    </style>
+
+    <style name="sc_Midnight.Series.Line.6" parent="sc_Default.Series.Line.6">
+        <item name="sc_lineColour">@color/sc_midnight_brownColorLight</item>
+        <item name="sc_fillColour" format="color">@color/sc_midnight_brownColorDark</item>
+        <item name="sc_pointColour" format="color">@color/sc_midnight_brownColorLight</item>
+    </style>
+    
+    <style name="sc_Midnight.Series.Column" parent="sc_Default.Series.Column">
+        <item name="sc_fillColour">@color/sc_midnight_blueColorLight</item>
+        <item name="sc_fillColourBelowBaseline">@color/sc_midnight_blueColorLight</item>
+        <item name="sc_fillGradientColour">@color/sc_midnight_blueColorDark</item>
+        <item name="sc_fillGradientColourBelowBaseline">@color/sc_midnight_blueColorDark</item>
+    </style>
+
+    <style name="sc_Midnight" parent="sc_Default">
+        <item name="sc_labelFontColour">@color/sc_midnight_greyColorLabel</item>
+        
+        <item name="sc_labelStyle">@style/sc_Midnight.Label</item>
+        <item name="sc_chartStyle">@style/sc_Midnight.Chart</item>
+        <item name="sc_plotAreaStyle">@style/sc_Midnight.PlotArea</item>
+        <item name="sc_crosshairStyle">@style/sc_Midnight.Crosshair</item>
+        <item name="sc_legendStyle">@style/sc_Midnight.Legend</item>
+        <item name="sc_axisStyle">@style/sc_Midnight.Axis</item>
+        <item name="sc_numberAxisStyle">@style/sc_Midnight.Axis.Number</item>
+        <item name="sc_majorTickStyle">@style/sc_Midnight.Tick.Major</item>
+        <item name="sc_minorTickStyle">@style/sc_Midnight.Tick.Minor</item>
+        <item name="sc_majorGridLineStyle">@style/sc_Midnight.GridLine.Major</item>
+        
+        <item name="sc_seriesLineStyle1">@style/sc_Midnight.Series.Line.1</item>
+        <item name="sc_seriesLineStyle2">@style/sc_Midnight.Series.Line.2</item>
+        <item name="sc_seriesLineStyle3">@style/sc_Midnight.Series.Line.3</item>
+        <item name="sc_seriesLineStyle4">@style/sc_Midnight.Series.Line.4</item>
+        <item name="sc_seriesLineStyle5">@style/sc_Midnight.Series.Line.5</item>
+        <item name="sc_seriesLineStyle6">@style/sc_Midnight.Series.Line.6</item>
+        <item name="sc_seriesPieStyle">@style/sc_Midnight.Series.Pie</item>
+        <item name="sc_seriesColumnStyle">@style/sc_Midnight.Series.Column</item>
+    </style>
+
+</resources>

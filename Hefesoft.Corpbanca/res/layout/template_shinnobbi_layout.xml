@@ -1,0 +1,62 @@
+<!-- Line Chart Sample - ShinobiCharts for Android CTP                       -->
+<!--                                                                         -->
+<!-- This example shows how to create and place a simple line chart into     --> 
+<!-- your app.                                                               -->
+<!--                                                                         -->
+<!-- Copyright 2012 Scott Logic Ltd. All rights reserved.                    -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:shinobi="http://schemas.android.com/apk/res-auto/com.shinobicontrols"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/template_shinnobi_line_Container"
+    android:orientation="vertical"
+    >
+
+    <!-- Add a TextView to the layout to display a title. -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Titulo"
+        android:textSize="24sp"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:layout_gravity="center_horizontal" /> 
+   
+    <!-- Add a Chart to the layout, giving it the Midnight theme. -->
+    <com.shinobicontrols.chart.Chart 
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <!-- Specify how you want the axes to appear. -->
+        <com.shinobicontrols.chart.axis.XAxis
+            shinobi:sc_dock="sc_bottom"
+            shinobi:sc_dockSize="50dip"
+            shinobi:sc_numberFormat="0.00" >
+
+            <com.shinobicontrols.chart.axis.MajorGridLine shinobi:sc_showLine="true" />
+
+        </com.shinobicontrols.chart.axis.XAxis>
+
+        <com.shinobicontrols.chart.axis.YAxis
+            shinobi:sc_dock="sc_left"
+            shinobi:sc_dockSize="50dip"
+            shinobi:sc_numberFormat="0.00" >
+
+            <com.shinobicontrols.chart.axis.MajorGridLine shinobi:sc_showLine="true" />
+
+        </com.shinobicontrols.chart.axis.YAxis>
+
+        <!-- Define the Line series; giving the elements an id makes it easy
+        to obtain a reference to them in code. -->
+        <com.shinobicontrols.chart.series.Line
+            android:id="@+id/sine_wave"
+            shinobi:sc_showFill="true"
+            shinobi:sc_shownInLegend="true"
+            shinobi:sc_title="Sine Wave" />
+
+    </com.shinobicontrols.chart.Chart>
+
+</LinearLayout>

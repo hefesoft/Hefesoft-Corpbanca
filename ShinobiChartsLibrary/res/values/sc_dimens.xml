@@ -1,0 +1,7 @@
+<resources>
+
+    <dimen name="sc_padding_small">8dp</dimen>
+    <dimen name="sc_padding_medium">8dp</dimen>
+    <dimen name="sc_padding_large">16dp</dimen>
+
+</resources>

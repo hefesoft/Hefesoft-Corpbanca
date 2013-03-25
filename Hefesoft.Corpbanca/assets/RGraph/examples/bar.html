@@ -1,0 +1,94 @@
+
+<!DOCTYPE html >
+<html>
+<head>
+   
+<style type="text/css">
+
+
+html, body
+{
+	margin:0px;
+    width: 100%;
+}
+
+#cvs
+{
+	margin-left:15%;
+	margin-top:
+	5%;
+    width: 70%;
+    height:70%;
+}
+
+</style>
+   
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <script src="../libraries/RGraph.common.core.js" ></script>
+    <script src="../libraries/RGraph.common.annotate.js" ></script>
+    <script src="../libraries/RGraph.common.context.js" ></script>
+    <script src="../libraries/RGraph.common.tooltips.js" ></script>
+    <script src="../libraries/RGraph.common.resizing.js" ></script>
+    <script src="../libraries/RGraph.bar.js" ></script>    
+    <script src="../libraries/RGraph.common.dynamic.js" ></script>
+    <script src="../libraries/RGraph.common.effects.js" ></script>    
+    <script src="../libraries/RGraph.common.key.js" ></script>
+    
+    <!--[if IE 8]><script src="../excanvas/excanvas.compressed.js"></script><![endif]-->
+
+    <script>
+        
+        var jsonData;
+
+      function loader() {
+		jsonData = window.webConnector.load();
+	}
+	
+	   function graficar(message) {
+        var Test2 = message;
+        
+        var myChart = new RGraph.Bar('cvs', Test2.data);
+        myChart.Set('chart.tooltips', Test2.tooltips);
+        myChart.Set('chart.labels', Test2.labels);
+        myChart.Set('chart.colors',  Test2.colors);
+        myChart.Set('chart.colors.sequential',true);
+        myChart.Set('chart.text.size',8);
+     	myChart.Set('chart.text.font', 'Calibri');
+    	myChart.Set('chart.title', 'Reporte por cobertura');
+     	myChart.Set('chart.noaxes', true);
+     	myChart.Set('chart.title.size', 8);
+     	myChart.Set('chart.title.bold', false);
+     	myChart.Set('chart.title.xaxis.bold', false);
+     	
+     
+        
+        
+        
+        RGraph.Effects.Bar.Wave(myChart);        
+        myChart.Draw();		        
+        
+        
+	}
+
+
+    </script>
+</head>
+<body onload="loader()" >    
+    
+    <script>
+        if (RGraph.isIE8()) {
+            document.write('<div style="background-color: #fee; border: 2px dashed red; padding: 5px"><b>Important</b><br /><br /> Internet Explorer does not natively support the HTML5 canvas tag yet, so if you want to see the graphs, you can either:<ul><li>Install <a href="http://code.google.com/chrome/chromeframe/">Google Chrome Frame</a></li><li>Use ExCanvas. This is provided in the RGraph Archive.</li><li>Use another browser entirely. Your choices are Firefox 3.5+, Chrome 2+, Safari 4+ or Opera 10.5+. </li></ul></div>');
+        }
+    </script>
+
+    <div>   
+            <div>
+                <canvas id="cvs">[No canvas support]</canvas>
+            </div>    
+    </div>
+
+</body>
+
+
+
+</html>

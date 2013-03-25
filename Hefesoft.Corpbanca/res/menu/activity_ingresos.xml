@@ -1,0 +1,4 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/sindicatos_ingresos_seleccionar_mes" android:showAsAction="ifRoom|withText" android:title="@string/sindicato_ingresos_menu_cambiar_mes"></item>
+
+</menu>

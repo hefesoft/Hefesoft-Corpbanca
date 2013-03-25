@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="sc_backgroundColour" format="color" />
+    <attr name="sc_colour" format="color" />
+    <attr name="sc_size" format="float" />
+    <attr name="sc_showLine" format="boolean" />
+
+    <declare-styleable name="sc_Label_Style">
+        <attr name="sc_labelBackgroundColour" format="color" />
+        <attr name="sc_labelFont" format="string" />
+        <attr name="sc_labelFontColour" format="color" />
+        <attr name="sc_labelFontSize" format="float" />
+    </declare-styleable>
+    <declare-styleable name="sc_Line_Style">
+        <attr name="sc_lineColour" format="color" />
+        <attr name="sc_lineWidth" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="sc_Chart_Layout">
+        <attr name="sc_dock" format="enum">
+            <enum name="sc_none" value="0" />
+            <enum name="sc_top" value="1" />
+            <enum name="sc_bottom" value="2" />
+            <enum name="sc_left" value="3" />
+            <enum name="sc_right" value="4" />
+        </attr>
+        <attr name="sc_dockSize" format="dimension" required="true" />
+    </declare-styleable>
+    <declare-styleable name="sc_Chart_Series">
+        <attr name="sc_selectionMode" format="enum">
+            <enum name="sc_none" value="0" />
+            <enum name="sc_point" value="1" />
+            <enum name="sc_multiPoint" value="2" />
+            <enum name="sc_series" value="3" />
+        </attr>
+        <attr name="sc_shownInLegend" format="boolean" />
+        <attr name="sc_title" format="string" />
+    </declare-styleable>
+    <declare-styleable name="sc_Chart_XYSeries">
+        <attr name="sc_axis_x" format="reference" />
+        <attr name="sc_axis_y" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="sc_Chart_XYZSeries" parent="sc_Chart_XYSeries">
+        <attr name="sc_axis_x" />
+        <attr name="sc_axis_y" />
+        <attr name="sc_axis_z" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="sc_Chart_CategoryValueSeries">
+        <attr name="sc_axis_category" format="reference" />
+        <attr name="sc_axis_value" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="sc_Chart_Style">
+        <attr name="sc_backgroundColour" />
+        <attr name="sc_backgroundColourGradient" format="color" />
+    </declare-styleable>
+    <declare-styleable name="sc_Plot_Area_Style">
+        <!-- Line_Style -->
+    </declare-styleable>
+
+    <!-- Series Styles -->
+    <declare-styleable name="sc_Series_Line_Colour_Style">
+        <attr name="sc_lineColour" />
+        <attr name="sc_lineColourBelowBaseline" format="color" />
+    </declare-styleable>
+    <declare-styleable name="sc_Series_Point_Colour_Style">
+        <attr name="sc_pointColour" format="color" />
+        <attr name="sc_pointColourBelowBaseline" format="color" />
+    </declare-styleable>
+    <declare-styleable name="sc_Series_Fill_Colour_Style">
+        <attr name="sc_fillColour" format="color" />
+        <attr name="sc_fillColourBelowBaseline" format="color" />
+        <attr name="sc_fillGradientColour" format="color" />
+        <attr name="sc_fillGradientColourBelowBaseline" format="color" />
+    </declare-styleable>
+    <declare-styleable name="sc_Chart_Series_Bubble_Style">
+        <attr name="sc_colour" />
+    </declare-styleable>
+    <declare-styleable name="sc_Chart_Series_Line_Style">
+        <attr name="sc_showLine" />
+        <attr name="sc_lineWidth" />
+        <attr name="sc_showFill" format="boolean" />
+        <attr name="sc_showPoint" format="boolean" />
+        <attr name="sc_pointRadius" format="integer" />
+        <!-- Series_Line_Colour_Style -->
+        <!-- Series_Point_Colour_Style -->
+        <!-- Series_Fill_Colour_Style -->
+    </declare-styleable>
+    <declare-styleable name="sc_Chart_Series_Pie_Style">
+        <attr name="sc_crustColours" format="color|reference" />
+        <attr name="sc_crustThickness" format="integer" />
+        <attr name="sc_flavourColours" format="color|reference" />
+        <attr name="sc_flavourTexture" format="enum">
+            <enum name="sc_none" value="0" />
+            <enum name="sc_bevelDark" value="1" />
+            <enum name="sc_bevelLight" value="2" />
+            <enum name="sc_roundDark" value="3" />
+            <enum name="sc_roundLight" value="4" />
+            <enum name="sc_bevelBright" value="5" />
+        </attr>
+        <attr name="sc_initialRotation" format="float" />
+        <attr name="sc_protrusion" format="float" />
+        <attr name="sc_rotationAnimation" format="enum">
+            <enum name="sc_none" value="0" />
+            <enum name="sc_linear" value="1" />
+            <enum name="sc_easeIn" value="2" />
+            <enum name="sc_easeOut" value="3" />
+            <enum name="sc_easeInOut" value="4" />
+            <enum name="sc_bounce" value="5" />
+        </attr>
+        <attr name="sc_showCrust" format="boolean" />
+        <attr name="sc_showFlavour" format="boolean" />
+        <attr name="sc_showLabels" format="boolean" />
+        <attr name="sc_size" />
+        <!-- Label_Style -->
+    </declare-styleable>
+    <declare-styleable name="sc_Chart_Series_Column_Style">
+        <attr name="sc_showLine" />
+        <attr name="sc_lineWidth" />
+        <!-- Series_Line_Colour_Style -->
+        <attr name="sc_showFill" />
+        <!-- Series_Fill_Colour_Style -->
+        <attr name="sc_widthFactor" format="float" />
+    </declare-styleable>
+
+    <!-- Axis Styles -->
+    <declare-styleable name="sc_Axis_Style">
+        <attr name="sc_backgroundColour" />
+        <attr name="sc_initialScale" format="float" />
+        <attr name="sc_baseline" format="float" />
+        <!-- Line_Style -->
+    </declare-styleable>
+    <declare-styleable name="sc_NumberAxis_Style">
+        <attr name="sc_numberFormat" format="string" />
+    </declare-styleable>
+    <declare-styleable name="sc_Tick_Style">
+        <attr name="sc_size" />
+        <attr name="sc_pixelsPerTick" format="integer" />
+        <attr name="sc_showLine" />
+        <attr name="sc_lineLength" format="integer" />
+        <attr name="sc_showLabel" format="boolean" />
+        <attr name="sc_labelOrientation" format="enum">
+            <enum name="sc_horizontal" value="0" />
+            <enum name="sc_vertical" value="1" />
+            <enum name="sc_diagonal" value="2" />
+        </attr>
+        <!-- Line_Style -->
+        <!-- Label_Style -->
+    </declare-styleable>
+    <declare-styleable name="sc_GridLine_Style">
+        <attr name="sc_showLine" />
+        <!-- Line_Style -->
+    </declare-styleable>
+    <declare-styleable name="sc_Legend_Style">
+        <attr name="sc_backgroundColour" />
+        <attr name="sc_borderColour" format="color" />
+        <attr name="sc_borderThickness" format="float" />
+        <!-- Label_Style -->
+    </declare-styleable>
+    <declare-styleable name="sc_Crosshair_Style">
+        <attr name="sc_showLine" />
+        <attr name="sc_interpolatePoints" format="boolean" />		
+        <!-- Line_Style -->
+    </declare-styleable>
+
+</resources>

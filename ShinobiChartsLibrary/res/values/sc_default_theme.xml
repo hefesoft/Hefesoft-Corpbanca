@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default Colours -->
+    <color name="sc_whiteColor">#FFFFFF</color>
+    <color name="sc_transparantColor">#00000000</color>
+
+    <!-- Main Colours -->
+    <color name="sc_blackColor">#0C0F0F</color>
+    <color name="sc_blackColorLowAlpha">#220C0F0F</color>
+    <color name="sc_blueColorDark">#375881</color>
+    <color name="sc_blueColorLight">#4872AC</color>
+    <color name="sc_greenColorDark">#4F8755</color>
+    <color name="sc_greenColorLight">#67B46F</color>
+    <color name="sc_greenColorBrightLight">#67F46F</color>
+    <color name="sc_orangeColorDark">#A76534</color>
+    <color name="sc_orangeColorLight">#DD8644</color>
+    <color name="sc_purpleColorDark">#5B3D80</color>
+    <color name="sc_purpleColorLight">#7950AA</color>
+    <color name="sc_redColorDark">#9E312E</color>
+    <color name="sc_redColorLight">#D23F3B</color>
+    <color name="sc_redColorBrightLight">#F23F3B</color>
+    <color name="sc_yellowColorDark">#B8AB3A</color>
+    <color name="sc_yellowColorLight">#F5E34B</color>
+
+    <!-- Background Colours -->
+    <color name="sc_backgroundColor">#F7F7F7</color>
+    <color name="sc_backgroundColorGradient">#EDEDED</color>
+
+    <!-- Pie Colours -->
+    <color name="sc_tie_die_blue_crush">#2A8AB3</color>
+    <color name="sc_pocket_depths_mint">#87B8C0</color>
+    <color name="sc_moses_pink_twist">#E94A72</color>
+    <color name="sc_concussion_purple">#9B4C97</color>
+    <color name="sc_apple_grass_green">#67A942</color>
+    <color name="sc_evening_sun_yellow">#F8B83C</color>
+    <color name="sc_tuscan_tile_orange">#F5652F</color>
+    <color name="sc_rambo_green">#195D6A</color>
+
+    <array name="sc_flavourColours" format="color">
+        <item>@color/sc_tie_die_blue_crush</item>
+        <item>@color/sc_pocket_depths_mint</item>
+        <item>@color/sc_moses_pink_twist</item>
+        <item>@color/sc_concussion_purple</item>
+        <item>@color/sc_apple_grass_green</item>
+        <item>@color/sc_evening_sun_yellow</item>
+        <item>@color/sc_tuscan_tile_orange</item>
+        <item>@color/sc_rambo_green</item>
+    </array>
+
+
+    <style name="sc_Default.Label">
+	    <item name="sc_labelBackgroundColour">@color/sc_transparantColor</item>
+	    <item name="sc_labelFont"></item>
+	    <item name="sc_labelFontColour">@color/sc_whiteColor</item>
+	    <item name="sc_labelFontSize">12</item>
+    </style>
+
+    <style name="sc_Default.Line">
+	    <item name="sc_lineColour">@color/sc_transparantColor</item>
+	    <item name="sc_lineWidth">1</item>
+    </style>
+    
+    <style name="sc_Default.Chart">
+        <item name="sc_backgroundColour">@color/sc_backgroundColor</item>
+        <item name="sc_backgroundColourGradient">@color/sc_backgroundColorGradient</item>
+    </style>
+
+    <style name="sc_Default.PlotArea">
+        <item name="sc_lineColour">@color/sc_whiteColor</item>
+        <item name="sc_lineWidth">0</item>
+    </style>
+
+    <style name="sc_Default.Crosshair">
+        <item name="sc_showLine">true</item>
+        <item name="sc_interpolatePoints">true</item>
+        <item name="sc_lineColour">@color/sc_blackColor</item>
+        <item name="sc_lineWidth">1</item>
+    </style>
+    
+    <style name="sc_Default.Legend">
+        <item name="sc_backgroundColour">@color/sc_transparantColor</item>
+        <item name="sc_borderColour">@color/sc_blackColor</item>
+        <item name="sc_borderThickness">5</item>
+        <item name="sc_labelFontColour">@color/sc_blackColor</item>
+        <item name="sc_labelFontSize">10</item>
+    </style>
+
+    <style name="sc_Default.Axis">
+        <item name="sc_backgroundColour">@color/sc_transparantColor</item>
+        <item name="sc_initialScale">1.0</item>
+        <item name="sc_baseline">0.0</item>
+        <item name="sc_lineWidth">1</item>
+        <item name="sc_lineColour">@color/sc_blackColor</item>
+    </style>
+
+    <style name="sc_Default.Axis.Number" >
+        <item name="sc_numberFormat"></item>
+    </style>
+
+    <style name="sc_Default.Tick">
+        <item name="sc_showLine">true</item>
+        <item name="sc_lineColour">@color/sc_blackColor</item>
+        <item name="sc_lineWidth">1</item>
+        <item name="sc_lineLength">5</item>
+        <item name="sc_showLabel">true</item>
+        <item name="sc_labelOrientation">sc_horizontal</item>
+        <item name="sc_labelBackgroundColour">@color/sc_transparantColor</item>
+        <item name="sc_labelFont"></item>
+        <item name="sc_labelFontColour">@color/sc_blackColor</item>
+        <item name="sc_labelFontSize">12</item>
+    </style>
+    
+    <style name="sc_Default.Tick.Major">
+        <item name="sc_lineWidth">2</item>
+        <item name="sc_lineLength">5</item>
+        <item name="sc_showLabel">true</item>
+        <item name="sc_labelFontSize">13</item>
+        <item name="sc_pixelsPerTick">150</item>
+    </style>
+
+    <style name="sc_Default.Tick.Minor">
+        <item name="sc_showLine">false</item>
+        <item name="sc_lineWidth">1</item>
+        <item name="sc_lineLength">5</item>
+        <item name="sc_showLabel">false</item>
+        <item name="sc_labelFontSize">8</item>
+        <item name="sc_pixelsPerTick">30</item>
+    </style>
+    
+    <style name="sc_Default.GridLine">
+        <item name="sc_showLine">false</item>
+        <item name="sc_lineWidth">1</item>
+        <item name="sc_lineColour">@color/sc_blackColorLowAlpha</item>
+    </style>
+    
+    <style name="sc_Default.GridLine.Major">
+    </style>
+
+    <style name="sc_Default.Series">    
+    </style>
+    
+    <style name="sc_Default.Series.Pie">
+        <item name="sc_crustColours">@color/sc_blackColor</item>
+        <item name="sc_crustThickness">5</item>
+        <item name="sc_flavourColours">@array/sc_flavourColours</item>
+        <item name="sc_flavourTexture">sc_bevelLight</item>
+        <item name="sc_initialRotation">0</item>
+        <item name="sc_protrusion">0.15</item>
+        <item name="sc_rotationAnimation">sc_linear</item>
+        <item name="sc_selectionMode">sc_point</item>
+        <item name="sc_showCrust">true</item>
+        <item name="sc_showFlavour">true</item>
+        <item name="sc_showLabels">false</item>
+        <item name="sc_size">0.75</item>
+    </style>
+
+    <style name="sc_Default.Series.Line">
+        <item name="sc_showLine">true</item>
+        <item name="sc_lineColour">@color/sc_whiteColor</item>
+        <item name="sc_lineColourBelowBaseline">@color/sc_transparantColor</item>
+        <item name="sc_lineWidth">1</item>
+        <item name="sc_showFill" format="boolean">false</item>
+        <item name="sc_fillColour" format="color">@color/sc_transparantColor</item>
+        <item name="sc_fillGradientColour" format="color">@color/sc_transparantColor</item>
+        <item name="sc_fillColourBelowBaseline" format="color">@color/sc_transparantColor</item>
+        <item name="sc_fillGradientColourBelowBaseline" format="color">@color/sc_transparantColor</item>
+        <item name="sc_showPoint" format="boolean">false</item>
+        <item name="sc_pointColour" format="color">@color/sc_transparantColor</item>
+        <item name="sc_pointColourBelowBaseline" format="color">@color/sc_transparantColor</item>
+        <item name="sc_pointRadius" format="integer">6</item>
+    </style>
+
+    <style name="sc_Default.Series.Line.1" >
+        <item name="sc_lineColour">@color/sc_redColorLight</item>
+        <item name="sc_fillColour" format="color">@color/sc_redColorDark</item>
+        <item name="sc_pointColour" format="color">@color/sc_redColorLight</item>
+    </style>
+
+    <style name="sc_Default.Series.Line.2" >
+        <item name="sc_lineColour">@color/sc_greenColorLight</item>
+        <item name="sc_fillColour" format="color">@color/sc_greenColorDark</item>
+        <item name="sc_pointColour" format="color">@color/sc_greenColorLight</item>
+    </style>
+
+    <style name="sc_Default.Series.Line.3" >
+        <item name="sc_lineColour">@color/sc_blueColorLight</item>
+        <item name="sc_fillColour" format="color">@color/sc_blueColorDark</item>
+        <item name="sc_pointColour" format="color">@color/sc_blueColorLight</item>
+    </style>
+
+    <style name="sc_Default.Series.Line.4" >
+        <item name="sc_lineColour">@color/sc_orangeColorLight</item>
+        <item name="sc_fillColour" format="color">@color/sc_orangeColorDark</item>
+        <item name="sc_pointColour" format="color">@color/sc_orangeColorLight</item>
+    </style>
+
+    <style name="sc_Default.Series.Line.5" >
+        <item name="sc_lineColour">@color/sc_purpleColorLight</item>
+        <item name="sc_fillColour" format="color">@color/sc_purpleColorDark</item>
+        <item name="sc_pointColour" format="color">@color/sc_purpleColorLight</item>
+    </style>
+
+    <style name="sc_Default.Series.Line.6" >
+        <item name="sc_lineColour">@color/sc_yellowColorLight</item>
+        <item name="sc_fillColour" format="color">@color/sc_yellowColorDark</item>
+        <item name="sc_pointColour" format="color">@color/sc_yellowColorLight</item>
+    </style>
+    
+    <style name="sc_Default.Series.Column">
+        <item name="sc_fillColour">@color/sc_redColorLight</item>
+        <item name="sc_fillColourBelowBaseline">@color/sc_redColorLight</item>
+        <item name="sc_fillGradientColour">@color/sc_redColorDark</item>
+        <item name="sc_fillGradientColourBelowBaseline">@color/sc_redColorDark</item>
+        <item name="sc_showFill">true</item>
+        <item name="sc_widthFactor">0.9</item>
+    </style>
+
+    <style name="sc_Default.Series.Bubble">
+
+        <!-- TODO Get Shinobi -->
+        <item name="sc_colour">@color/sc_blueColorLight</item>
+    </style>
+
+    <array name="sc_default_seriesLineStyles" format="reference">
+        <item>@attr/sc_seriesLineStyle1</item>
+        <item>@attr/sc_seriesLineStyle2</item>
+        <item>@attr/sc_seriesLineStyle3</item>
+        <item>@attr/sc_seriesLineStyle4</item>
+        <item>@attr/sc_seriesLineStyle5</item>
+        <item>@attr/sc_seriesLineStyle6</item>
+    </array>
+
+    <style name="sc_Default">
+	    <item name="sc_labelBackgroundColour">@color/sc_transparantColor</item>
+	    <item name="sc_labelFont"></item>
+	    <item name="sc_labelFontColour">@color/sc_whiteColor</item>
+	    <item name="sc_labelFontSize">12</item>
+	            <item name="sc_labelStyle">@style/sc_Default.Label</item>
+        <item name="sc_lineStyle">@style/sc_Default.Line</item>
+        
+        <item name="sc_selectionMode">sc_none</item>
+        <item name="sc_shownInLegend">false</item>
+        <item name="sc_title"></item>
+        
+        <item name="sc_chartStyle">@style/sc_Default.Chart</item>
+        <item name="sc_plotAreaStyle">@style/sc_Default.PlotArea</item>
+        <item name="sc_crosshairStyle">@style/sc_Default.Crosshair</item>
+        <item name="sc_legendStyle">@style/sc_Default.Legend</item>
+        <item name="sc_axisStyle">@style/sc_Default.Axis</item>
+        <item name="sc_numberAxisStyle">@style/sc_Default.Axis.Number</item>
+        <item name="sc_majorTickStyle">@style/sc_Default.Tick.Major</item>
+        <item name="sc_minorTickStyle">@style/sc_Default.Tick.Minor</item>
+        <item name="sc_majorGridLineStyle">@style/sc_Default.GridLine.Major</item>
+                
+        <item name="sc_seriesPieStyle">@style/sc_Default.Series.Pie</item>
+        <item name="sc_seriesLineStyles">@array/sc_default_seriesLineStyles</item>
+        <item name="sc_seriesLineStyle1">@style/sc_Default.Series.Line.1</item>
+        <item name="sc_seriesLineStyle2">@style/sc_Default.Series.Line.2</item>
+        <item name="sc_seriesLineStyle3">@style/sc_Default.Series.Line.3</item>
+        <item name="sc_seriesLineStyle4">@style/sc_Default.Series.Line.4</item>
+        <item name="sc_seriesLineStyle5">@style/sc_Default.Series.Line.5</item>
+        <item name="sc_seriesLineStyle6">@style/sc_Default.Series.Line.6</item>
+        <item name="sc_seriesColumnStyle">@style/sc_Default.Series.Column</item>
+        <item name="sc_seriesBubbleStyle">@style/sc_Default.Series.Bubble</item>
+    </style>
+
+</resources>

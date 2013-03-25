@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+    >
+
+<ImageView
+        android:id="@+id/image_Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/centro_costo" />
+
+<TextView
+        android:id="@+id/template_menu_nombre"        
+        style="?android:attr/textAppearanceLarge"	    
+	    android:textColor="@color/white"
+	    android:paddingLeft="10dp"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:padding="10dp"
+         />
+
+</LinearLayout>

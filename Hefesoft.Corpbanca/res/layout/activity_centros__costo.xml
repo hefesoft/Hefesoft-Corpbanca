@@ -1,0 +1,91 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Ingresos" >
+
+        <!-- Login progress -->
+
+    <LinearLayout
+        android:id="@+id/layout_Cargando_Centros_Costo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/centros_costo_Cargando"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Cargando informacion"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+                <!-- splash sin datos -->
+
+    <LinearLayout
+        android:id="@+id/layout_Centros_Costo_Splash_Inicial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Por favor presione con el dedo el simbolo de corpbanca y seleccione un centro de costo"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+    
+    
+    
+            <!-- splash sin datos -->
+
+    <LinearLayout
+        android:id="@+id/layout_Centros_Costo_Splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Sin datos para este mes y año selecciona otro por favor"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+    
+    
+    <!-- Plantilla Centros costo -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Contenedor_Centros_Costo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Ingresos" >
+
+    <GridView
+        android:id="@+id/Grid_Centros_Costo_Plantilla"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2" >
+    </GridView>
+
+</LinearLayout>
+
+</merge>

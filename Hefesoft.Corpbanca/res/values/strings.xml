@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Gestion Line</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Configuracion</string>
+    <string name="title_activity_mapa__oficinas">Oficinas</string>
+    <string name="calcular_ruta">Calcular ruta</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_graficas">Graficas</string>
+    <string name="title_activity_ingresos">Ingresos al sindicato</string>
+    <string name="sindicato_ingresos_menu_cambiar_mes">Visualizar otro mes</string>
+    <string name="title_activity_centros__costo">Centros de costo</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="title_activity_splash"></string>
+    <string name="Login_Log_Out">Salir</string>
+    <string name="Home_Log_Out">Salir</string>
+    <string name="no_Datos_Mes">No hay datos para este mes por favor seleccione visualizar otro mes</string>
+    <string name="cambiar_centro_costo">Cambiar centro de costo</string>
+    <string name="title_activity_distribucion__genero">Distribucion_Genero</string>
+
+</resources>

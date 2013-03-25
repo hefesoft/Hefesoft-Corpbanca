@@ -1,0 +1,71 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Ingresos" >
+
+    <!-- Login progress -->
+
+    <LinearLayout
+        android:id="@+id/layout_Cargando_Sindicalizados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/sindicalizados_Cargando"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Cargando empleados sindicalizados"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>    
+    
+   <!-- splash sin datos -->
+
+    <LinearLayout
+        android:id="@+id/layout_Sindicalizados_Costo_Splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="No hay datos para el mes actual por favor presione la opcion de visualizar otro mes"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+    
+    
+    <!-- splash sindicalizados -->
+    
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Sindicalizados_Ingresos_Contenedor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Ingresos" >   
+
+    <GridView
+        android:id="@+id/Grid_Sindicatos_Ingresos_Nuevos_Ingresos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2" >
+    </GridView>
+
+</LinearLayout>
+
+</merge>
