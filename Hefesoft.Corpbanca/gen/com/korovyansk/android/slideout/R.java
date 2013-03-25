@@ -8,12 +8,12 @@ package com.korovyansk.android.slideout;
 
 public final class R {
 	public static final class id {
-		public static final int slideout_placeholder = 0x7f040037;
-		public static final int slidedout_cover = 0x7f040038;
+		public static final int slideout_placeholder = 0x7f050037;
+		public static final int slidedout_cover = 0x7f050038;
 	}
 	public static final class string {
-		public static final int hello = 0x7f0a0000;
-		public static final int app_name = 0x7f0a0001;
+		public static final int hello = 0x7f040000;
+		public static final int app_name = 0x7f040001;
 	}
 	public static final class layout {
 		public static final int slideout = 0x7f03000b;
